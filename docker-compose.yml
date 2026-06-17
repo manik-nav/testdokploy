@@ -1,5 +1,5 @@
 services:
   app:
     build: .
-    ports:
-      - "42021:42021"
+    expose:
+      - "80"
