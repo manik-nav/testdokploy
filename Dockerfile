@@ -21,6 +21,6 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 # Copy built Angular app from build stage
 COPY --from=build /app/dist/testdokploy/browser /usr/share/nginx/html
 
-EXPOSE 4200
+EXPOSE 42021
 
 CMD ["nginx", "-g", "daemon off;"]
